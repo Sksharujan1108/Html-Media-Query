@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Final Task </title>
+
+    <style>
+        .container {
+            background-color: blueviolet;
+            padding: 5px;
+        }
+
+        .first-main {
+            display: flex;
+        }
+        .one {
+            background-color: yellow;
+            margin: 5px;
+            height: 100px;
+            flex-basis: 100%;
+        }
+
+        .second-main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 5px;
+
+        }
+
+        .two {
+            background-color: green;
+            /* margin: 5px; */
+            height: 250px;
+            margin-bottom: 10px;
+            flex-basis: 32%;
+        }
+
+        .third-main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .three {
+            background-color: grey;
+            margin: 5px;
+            height: 100px;
+            flex-basis: 23%;
+        }
+
+
+        /* Write the media query */
+        @media screen and (max-width: 900px) {
+           .two {
+                flex-basis: 100%;
+            }
+
+           .three {
+                flex-basis: 48%;
+            }
+        }
+
+        /* Add media query for tablet */
+        @media screen and (max-width: 600px) {
+            two {
+                flex-basis: 100%;
+            }
+
+            .three {
+                flex-basis: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'first-main'>
+            <div class = 'one'> </div>
+        </div>
+
+        <div class = 'second-main'>
+            <div class = 'two'> </div>
+            <div class = 'two'> </div>
+            <div class = 'two'> </div>
+        </div>
+
+        <div class = 'third-main'>
+            <div class = 'three'> </div>
+            <div class = 'three'> </div>
+            <div class = 'three'> </div>
+            <div class = 'three'> </div>
+        </div>
+    </div>
+</body>
+</html>
